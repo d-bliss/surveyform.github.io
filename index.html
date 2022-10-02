@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="survey-form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title" class="text-center">Test Survey Form
+        </h1>
+        <p id="description">Thank you for filling our our survey form</p>
+        <form id="survey-form">
+
+            <div class="form-group">
+            <label id="name-label" for="name">Name <input id="name" type="text" class="form-control"
+                    placeholder="enter your name" required /></label>
+            </div>
+
+            <div class="form-group">
+            <label id="email-label" for="email">Email <input id="email" type="email" class="form-control"
+                    placeholder="enter your email" required /></label>
+                </div>
+
+            <div class="form-group">
+            <label id="number-label" for="number">Phone Number <input type="number" class="form-control"
+                    id="number" placeholder="enter phone number here" min="14"
+                    max="99" /></label>
+                    </div>
+
+            <div class="form-group">
+            <p>Age (optional)</p>
+            <input type="number" class="form-control" id="number" name="number" min="14" max="99">
+            </div>
+
+            <div>
+            <label>Are you currently working as a progammer, or a student?
+                <select id="dropdown" name="status" class="form-control" required>
+                    <option value="">(select one)</option>
+                    <option id="dropdown" value="1">Working</option>
+                    <option id="dropdown" value="2">Student</option>
+                </select>
+                </label></div>
+                <div></div>
+
+            <fieldset>
+                <p>Would you like to study part time, or full time?</p>
+                <label><input
+                        type="radio" value="Full time" name="hours"
+                        class="inline" /> Full time</label>
+                <label><input type="radio" value="Part time" name="hours"
+                        class="inline" /> Part time</label>
+
+        </fieldset>
+            <div></div>
+            <div class="form-group">
+                <fieldset>
+                    <p>What would you like to learn?</p><label>
+                        <input type="checkbox" value="Responsive Web Design"
+                            name="terms" class="inline" required />Responsive
+                        Web Design
+                    </label>
+                        <label><input type="checkbox"
+                        value="JavaScript Algorithms and Data Structures"
+                        name="terms" class="inline" required />JavaScript
+                    Algorithms and Data Structures
+                    </label>
+                        <label><input type="checkbox"
+                        value="JavaScript Back End Development and APIs"
+                        name="terms" class="inline" required />JavaScript Back
+                    End Development and APIs
+                    </label>
+            </div>
+            </fieldset>
+
+            <label>Additional comments:</label>
+                <textarea name="bio" rows="3" cols="30"
+                    placeholder="Please leave us your feedback..."></textarea>
+                    <div></div>
+
+                <input id="submit" type="submit" value="Submit">
+
+        </form>
+    </div>
+  </body>
+</html>
